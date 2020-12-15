@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    height: 500px;
+    background-image: url(https://ellaslist.com.au/system/articles/featured_images/000/002/240/original/summer_camp_for_adults.jpg?1504032697);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+p {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 10px;
+}
+
+h1 {
+  text-align: center;
+  padding-left: 110px;
+  padding-bottom: 20px;
+  font-size: x-large;
+}
+
+a {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 25px;
+    width: 300px;
+    background-color: rgba(0,0,0,.8);
+    box-shadow: 0 0 10px rgba(255,255,255,.3);
+}
+.container h1{
+    text-align: left;
+    color: #fafafa;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px solid orange;
+}
+
+.container p{
+    padding-top: 15px;
+    font-size: 10px;
+    text-align: center;
+}
+.container label{
+    text-align: left;
+    color: rgb(253, 204, 112);
+}
+.container input{
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid orange;
+    color: #fff;
+    font-size: 20px;
+}
+.container button{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: orange;
+    color:black;
+}
+button:hover{
+   background-color: rgb(230, 185, 126);
+}

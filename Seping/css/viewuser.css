@@ -1,0 +1,51 @@
+.user{
+    padding-right: 100px;
+}
+#search{
+        width: 200px;
+        vertical-align: middle;
+        white-space: nowrap;
+        position: relative;
+        border-radius: 5px;
+        border: none;
+        margin-left: 180px;
+        margin-top: 20px;
+        
+}
+
+button{
+    width: 70px;
+    border-radius: 5px;
+    height: 30px;
+    background-color: orange;
+    color: white;
+    border-color: peachpuff;
+}
+.oke {
+    background-color: orange;
+    color: rgb(4, 4, 199);
+}
+.oke p{
+ margin-left: 500px;
+ margin-top: 15px;
+ widows: 30px;
+}
+.oke h3{
+    margin-left: 10px;
+    width: 500px;
+    color: rgb(4, 4, 199);
+}
+.oke h4{
+    color: rgb(4, 4, 199);
+}
+.e button{
+    width: 80px;
+    background-color: orange;
+    color: white;
+    border-color: peachpuff;
+}
+
+
+
+
+      
