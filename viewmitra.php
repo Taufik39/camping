@@ -28,7 +28,7 @@ require_once("koneksi.php");
       </div>
       <div class ="col-sm-6" style="text-align: right; padding-top: 20px;">
         <a href="masukmitra.php" >Home</a>
-        <a href="barangyanggdisewa.php" >Pesanan</a>
+        <a href="barangyangdisewa.php" >Pesanan</a>
       </div>
       </div>
     </div>
