@@ -43,8 +43,7 @@ $result = $stmt->fetchAll();
         <div class="container">
         <?php
     $stmt_makanan = $pdo_conn->prepare("SELECT * FROM pemesanan JOIN bio_penyewa where penyewa = id_penyewa AND pemilik = :id_user ORDER BY tgl_sewa");
-    $stmt_makanan->bindValue(':id_user', "%$_SESSION['id_user']%");
-    $stmt_makanan->execute();
+    $stmt_makanan->execute(array(':id_user' => $_SESSION['id_user']));
     $result_makanan = $stmt_makanan->fetchAll();
   ?>
           <div class="row">
