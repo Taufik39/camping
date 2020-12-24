@@ -42,7 +42,7 @@ $result = $stmt->fetchAll();
     <div class="container-fluid d">
         <div class="container">
         <?php
-    $stmt_makanan = $pdo_conn->prepare("SELECT * FROM barang JOIN bio_menyewakan ORDER BY nama_barang");
+    $stmt_makanan = $pdo_conn->prepare("SELECT * FROM barang ORDER BY nama_barang");
     $stmt_makanan->execute();
     $result_makanan = $stmt_makanan->fetchAll();
   ?>
@@ -59,6 +59,7 @@ $result = $stmt->fetchAll();
 					    	<ul class="list-group list-group-flush">
                   
                 <li class="list-group-item">Nomor Barang : <?php echo $row["id_barang"]; ?></li>
+                  <li class="list-group-item">Nama Toko : <?php echo $row["nama_toko"]; ?></li>
                   <li class="list-group-item">Biaya : <?php echo $row["biaya"]; ?></li>
                   <li class="list-group-item">Deskripsi : <?php echo $row["deskripsi"]; ?></li>
 								<center><a href='formpemesan.php?barang=<?php echo $row['nama_barang']; ?>'><button>PESAN</button></a></center>
