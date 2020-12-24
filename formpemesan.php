@@ -80,13 +80,13 @@ a,a:hover,a:visited,a:active{
                         <input type="text" name="jumlah" required placeholder="Jumlah" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="barang" value="<?php echo $row[0]['id_barang']; ?>" readonly=""/>
+                        <input type="text" name="barang" value="<?php echo $cetakan[0]['id_barang']; ?>" readonly=""/>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="pemilik" value="<?php echo $row[0]['id_menyewakan']; ?>" readonly=""/>
+                        <input type="text" name="pemilik" value="<?php echo $cetakan[0]['id_menyewakan']; ?>" readonly=""/>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="penyewa" value="<?php echo $row[0]['id_penyewa']; ?>" readonly=""/>
+                        <input type="text" name="penyewa" value="<?php echo $cetakan[0]['id_penyewa']; ?>" readonly=""/>
                     </div>
                         <input type="submit" class="btn btn-block btn-custom-pink" value="PESAN" name="tambahpesanan"/>
                     
