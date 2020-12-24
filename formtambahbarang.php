@@ -79,7 +79,7 @@ a,a:hover,a:visited,a:active{
            <form name="frmAdd" action="tambahbarang.php" method="POST" enctype="multipart/form-data">
                 <h3 class="text-center title-login">Tambah Barang Sewaan</h3>
                     <div class="form-group">
-                         <input type="text" name="namatoko" value="<?php echo $result[0]['id_menyewakan']; ?>" placeholder="<?php echo $result[0]['nama_toko']; ?>" readonly="" />
+                         <input type="text" name="namatoko" value="<?php echo  $_SESSION['id_user']; ?>" placeholder="<?php echo  $_SESSION['id_user']; ?>" readonly="" />
                     </div>
                     <div class="form-group">
                          <input type="text" name="namabarang" required placeholder="Nama Barang" />
