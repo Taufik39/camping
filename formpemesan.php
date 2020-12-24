@@ -91,10 +91,10 @@ a,a:hover,a:visited,a:active{
                         <input type="text" name="jumlah" required placeholder="Jumlah" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="barang" value="<?php echo $result[0]['id_barang']; ?>" readonly=""/>
+                        <input type="text" name="barang" value="<?php echo $_SESSION['id_barang']; ?>" readonly=""/>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="pemilik" value="<?php echo $result[0]['id_menyewakan']; ?>" readonly=""/>
+                        <input type="text" name="pemilik" value="<?php echo $_SESSION['pemilik']; ?>" readonly=""/>
                     </div>
                     <div class="form-group">
                         <input type="text" name="penyewa" value="<?php echo $_SESSION['id_user']; ?>" readonly=""/>
