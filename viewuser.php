@@ -42,7 +42,7 @@ $result = $stmt->fetchAll();
     <div class="container-fluid d">
         <div class="container">
         <?php
-    $stmt_makanan = $pdo_conn->prepare("SELECT DISTINCT * FROM barang JOIN bio_menyewakan ORDER BY nama_barang");
+    $stmt_makanan = $pdo_conn->prepare("SELECT * FROM barang JOIN bio_menyewakan WHERE pemilik = id_menyewakan ORDER BY nama_barang");
     $stmt_makanan->execute();
     $result_makanan = $stmt_makanan->fetchAll();
   ?>
