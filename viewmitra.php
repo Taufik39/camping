@@ -43,7 +43,7 @@ require_once("koneksi.php");
         <div class="container-fluid d">
         <div class="container">
         <?php
-    $stmt_makanan = $pdo_conn->prepare("SELECT * FROM barang JOIN bio_menyewakan ORDER BY pemilik ");
+    $stmt_makanan = $pdo_conn->prepare("SELECT * FROM barang JOIN bio_menyewakan where pemilik = id_menyewakan ORDER BY pemilik ");
     $stmt_makanan->execute();
     $result_makanan = $stmt_makanan->fetchAll();
   ?>
