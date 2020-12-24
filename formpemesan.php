@@ -1,3 +1,11 @@
+<?php
+session_name("verify");
+session_start();
+if (isset($_SESSION['login_user']) == '')
+{
+	header("location: formloginuser.php");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -66,9 +74,8 @@ a,a:hover,a:visited,a:active{
        
     <?php
         require_once("koneksi.php");
-        $barang = $_GET['barang'];
-        $stmt = $pdo_conn->prepare("SELECT * FROM barang JOIN bio_menyewakan JOIN bio_penyewa WHERE nama_barang= ".$barang." ");
-        $stmt->execute();
+        $stmt = $pdo_conn->prepare("SELECT * FROM barang JOIN bio_menyewakan JOIN bio_penyewa WHERE nama_barang= :nama_barang ");
+        $stmt->execute(array(':nama_barang' => $_SESSION['barang']));
         $result = $stmt->fetchAll();
     ?>
            <div class="login-body">
