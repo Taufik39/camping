@@ -74,7 +74,7 @@ a,a:hover,a:visited,a:active{
        
     <?php
         require_once("koneksi.php");
-        $stmt = $pdo_conn->prepare("SELECT * FROM barang JOIN bio_menyewakan JOIN bio_penyewa WHERE nama_barang=" ."'" . $_GET['barang'] . "'");
+        $stmt = $pdo_conn->prepare("SELECT * FROM barang JOIN bio_menyewakan JOIN bio_penyewa WHERE id_barang=" ."'" . $_GET['barang'] . "'");
         $stmt->execute();
         $result = $stmt->fetchAll();
     ?>
