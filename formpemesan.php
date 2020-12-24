@@ -74,8 +74,8 @@ a,a:hover,a:visited,a:active{
        
     <?php
         require_once("koneksi.php");
-        $stmt = $pdo_conn->prepare("SELECT * FROM barang JOIN bio_menyewakan JOIN bio_penyewa WHERE id_barang = :id_barang AND id_penyewa = :id_penyewa ");
-        $stmt->execute(array(':id_barang' => $_SESSION['id_barang'], ':id_penyewa' => $_SESSION_['id_user']));
+        $stmt = $pdo_conn->prepare("SELECT * FROM barang JOIN bio_menyewakan JOIN bio_penyewa WHERE id_barang = :id_barang ");
+        $stmt->execute(array(':id_barang' => $_SESSION['id_barang']));
         $result = $stmt->fetchAll();
     ?>
            <div class="login-body">
@@ -97,7 +97,7 @@ a,a:hover,a:visited,a:active{
                         <input type="text" name="pemilik" value="<?php echo $result[0]['id_menyewakan']; ?>" readonly=""/>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="penyewa" value="<?php echo $result[0]['id_penyewa']; ?>" readonly=""/>
+                        <input type="text" name="penyewa" value="<?php echo $_SESSION['id_user']; ?>" readonly=""/>
                     </div>
                         <input type="submit" class="btn btn-block btn-custom-pink" value="PESAN" name="tambahpesanan"/>
                     
