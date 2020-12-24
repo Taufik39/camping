@@ -62,7 +62,7 @@ $result = $stmt->fetchAll();
                   <li class="list-group-item">Nama Toko : <?php echo $row["nama_toko"]; ?></li>
                   <li class="list-group-item">Biaya : <?php echo $row["biaya"]; ?></li>
                   <li class="list-group-item">Deskripsi : <?php echo $row["deskripsi"]; ?></li>
-                <center><a href='formpemesan.php?barang=<?php echo $row['id_barang']; $_SESSION['pemilik'] = $row['pemilik']; ?>'><button>PESAN</button></a></center>
+                <center><a href='formpemesan.php?barang=<?php echo $row['id_barang']; $pemilik = $row; ?>'><button>PESAN</button></a></center>
 							</ul>
 					  	</div>
 					</div>
