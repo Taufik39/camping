@@ -66,8 +66,9 @@ a,a:hover,a:visited,a:active{
        
     <?php
         require_once("koneksi.php");
-        $stmt = $pdo_conn->prepare("SELECT * FROM barang JOIN bio_menyewakan JOIN bio_penyewa WHERE nama_barang= :nama_barang ");
-        $stmt->execute(array(':nama_barang' => $_SESSION['nama_barang']));
+        $barang = $_GET['barang'];
+        $stmt = $pdo_conn->prepare("SELECT * FROM barang JOIN bio_menyewakan JOIN bio_penyewa WHERE nama_barang= ".$barang." ");
+        $stmt->execute();
         $result = $stmt->fetchAll();
     ?>
            <div class="login-body">
