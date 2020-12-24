@@ -18,6 +18,7 @@ if(empty($row['username']))
 else 
 {
     $_SESSION['login_user'] = $_POST['userlog'];
+    $_SESSION['id_user'] = $row['id_menyewakan'];
     $_SESSION['level_user'] = $row['level'];
     header("location: masukmitra.php");
 }
