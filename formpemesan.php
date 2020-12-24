@@ -74,7 +74,7 @@ a,a:hover,a:visited,a:active{
        
     <?php
         require_once("koneksi.php");
-        $stmt = $pdo_conn->prepare("SELECT * FROM barang JOIN bio_menyewakan JOIN bio_penyewa WHERE id_barang=" ."'" . $_GET['barang'] . "'");
+        $stmt = $pdo_conn->prepare("SELECT * FROM barang WHERE id_barang=" ."'" . $_GET['barang'] . "'");
         $stmt->execute();
         $result = $stmt->fetchAll();
     ?>
@@ -94,7 +94,7 @@ a,a:hover,a:visited,a:active{
                         <input type="text" name="barang" value="<?php echo $result[0]['id_barang']; ?>" readonly=""/>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="pemilik" value="<?php echo $pemilik[0]['id_menyewakan']; ?>" readonly=""/>
+                        <input type="text" name="pemilik" value="<?php echo $result[0]['id_menyewakan']; ?>" readonly=""/>
                     </div>
                     <div class="form-group">
                         <input type="text" name="penyewa" value="<?php echo $_SESSION['id_user']; ?>" readonly=""/>
