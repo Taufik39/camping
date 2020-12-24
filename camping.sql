@@ -72,7 +72,7 @@ CREATE TABLE `bio_menyewakan` (
 --
 
 INSERT INTO `bio_menyewakan` (`id_menyewakan`, `nama_menyewakan`, `username`, `pass_menyewakan`, `nama_toko`, `email`, `no_hp`, `tgl_regist`, `alamat`, `profil`) VALUES
-(2, 'Panji Petualang', 'camping', '123', 'Camping Store', 'camping@gmail.com', '0832145678', '0000-00-00', 'Banjarmasin', 'SEbuah Toko yang meneydiakan peralatan camping baik untuk disewa ataupun dijual');
+(2, 'Panji Petualang', 'camping', '123', 'Camping Store', 'camping@gmail.com', '0832145678', 'Banjarmasin', 'SEbuah Toko yang meneydiakan peralatan camping baik untuk disewa ataupun dijual');
 
 -- --------------------------------------------------------
 
@@ -96,7 +96,7 @@ CREATE TABLE `bio_penyewa` (
 --
 
 INSERT INTO `bio_penyewa` (`id_penyewa`, `nama_penyewa`, `username_penyewa`, `pass_penyewa`, `email_penyewa`, `no_hp_p`, `tgl_regist`, `alamat_penyewa`) VALUES
-(3, 'Putri Ananda', 'kelompok4', '1234', 'kelompok4@gmail.com', '0812345678', '0000-00-00', 'Banjarmasin');
+(3, 'Putri Ananda', 'kelompok4', '1234', 'kelompok4@gmail.com', '0812345678', 'Banjarmasin');
 
 -- --------------------------------------------------------
 

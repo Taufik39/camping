@@ -59,7 +59,6 @@ $result = $stmt->fetchAll();
 					    	<ul class="list-group list-group-flush">
                   
                 <li class="list-group-item">Nomor Barang : <?php echo $row["id_barang"]; ?></li>
-                  <li class="list-group-item">Nama Toko : <?php echo $row["nama_toko"]; ?></li>
                   <li class="list-group-item">Biaya : <?php echo $row["biaya"]; ?></li>
                   <li class="list-group-item">Deskripsi : <?php echo $row["deskripsi"]; ?></li>
 								<center><a href='formpemesan.php?barang=<?php echo $row['nama_barang']; ?>'><button>PESAN</button></a></center>
