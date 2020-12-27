@@ -1,4 +1,7 @@
 <!doctype html>
+<!--
+  ini komen ya ^_^
+-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
