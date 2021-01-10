@@ -28,8 +28,8 @@
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav pull-right">
               <li><a href="#">HOME</a></li>
-              <li><a href="#testimoni">TESTIMONIALS</a></li>
-              <li><a href="#tentang">ABOUT</a></li>
+              <li><a href="#Testimonials">TESTIMONIALS</a></li>
+              <li><a href="#About Us">ABOUT</a></li>
               <li><a href="formloginuser.php">LOGIN</a></li>
             </ul>
           </div>
@@ -95,7 +95,7 @@
     </section>
 
     <section class="testimonial">
-      <div class="container" id="testimoni">
+      <div class="container" id="Testimonials">
         <div class="page-section">
           <div class="text-center">
             <h2 class="page-section__title">Testimonials</h2>
@@ -204,7 +204,7 @@
     </section>
 
     <section class="team team--bg">
-      <div class="container" id="tentang">
+      <div class="container" id="About Us">
         <div class="page-section">
           <div class="text-center">
             <h2 class="page-section__title">About Us</h2>
