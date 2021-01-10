@@ -63,16 +63,17 @@ input[type="submit"]:focus{
   font-style: normal;
 }
 
-html {scroll-behavior: smooth;}
+
 
 html,body {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; 
-  font-family: 'Geometria';
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   line-height: 1.8;
+  font-family: 'Geometria';
 }
 
 h1,h2,h3{
