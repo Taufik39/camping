@@ -1,7 +1,5 @@
 <!doctype html>
-<!--
-  ini komen ya ^_^
--->
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -30,8 +28,8 @@
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav pull-right">
               <li><a href="#">HOME</a></li>
-              <li><a href="#">TESTIMONIALS</a></li>
-              <li><a href="#">ABOUT</a></li>
+              <li><a href="#testimoni">TESTIMONIALS</a></li>
+              <li><a href="#tentang">ABOUT</a></li>
               <li><a href="formloginuser.php">LOGIN</a></li>
             </ul>
           </div>
@@ -97,7 +95,7 @@
     </section>
 
     <section class="testimonial">
-      <div class="container">
+      <div class="container" id="testimoni">
         <div class="page-section">
           <div class="text-center">
             <h2 class="page-section__title">Testimonials</h2>
@@ -206,7 +204,7 @@
     </section>
 
     <section class="team team--bg">
-      <div class="container">
+      <div class="container" id="tentang">
         <div class="page-section">
           <div class="text-center">
             <h2 class="page-section__title">About Us</h2>
